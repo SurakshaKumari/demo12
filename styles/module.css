@@ -1,0 +1,134 @@
+/* styles/Header.module.css */
+Header {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+    text-decoration: none !important;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+   
+  }
+  .logo>a{
+    text-decoration: none;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .menu li {
+    margin-right: 1rem;
+  }
+  
+  .user-actions {
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Add media queries for mobile responsiveness */
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    .menu {
+      margin-top: 1rem;
+    }
+  
+    .menu ul {
+      flex-direction: column;
+    }
+  
+    .menu li {
+      margin: 0.5rem 0;
+    }
+  }
+  /* For desktop view */
+.navbar {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  /* Add other styles as needed */
+}
+
+/* For mobile view (apply styles only when the screen width is below a certain breakpoint) */
+@media (min-width: 768px) {
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    /* Adjust styles for mobile */
+  }
+  .mobile-logo{
+      display: none;
+
+  }
+}
+@media (max-width: 767px) {
+ 
+  .desktop-logo{
+      display: none;
+  }
+  .mobile-logo{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  .menu{
+    display: none;
+  }
+  .user-actions{
+    display: none;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+.menu-icon{
+  padding-top: 9px;
+  padding-right: 37px;
+}
+/* styles.css */
+.section-with-buttons {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+.section-with-buttons h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.button {
+  /* background-color: #0077cc; */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.button:hover {
+  background-color: #0055aa;
+}
+
+
+
+  
